@@ -1,7 +1,8 @@
 body {
-    background-color: gray;
+    background-color: #6C7B8B;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 15px;
+    margin: 1%;
+    padding: 0.5%;
     border-style:groove;
 }
 
@@ -9,17 +10,27 @@ body {
     text-align: center;
     font-family: Garamond;
     font-size: 44px;
-    color: white;
-    background-color: black;
+    color: #FFFFFF;
+    background-color: #000000;
     margin: 0px 0px 0px 0px;
 }
 
-h2 {
+#subtitle {
     text-align: center;
-    color: black;
+    color: #000000;
+   }
+
+#contgraf {
+    text-align: center;
+}
+
+#graf {
+    width: 40%;
+    object-fit: cover;
+    border-style:solid;
     }
 
-img {
-    width: 40%;
-    object-fit: cover;    
-    }
+#contatos {
+    width: 2.5%;
+    margin: 0.1%;
+}
