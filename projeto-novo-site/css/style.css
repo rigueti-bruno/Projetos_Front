@@ -45,21 +45,27 @@ header h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    text-align: center;
 }
 
 .titulo h1 {
     padding: 2%;
     font-size: xx-large;
-    font-variant: small-caps;
+    font-variant: small-caps;    
 }
 
 .titulo img {
     width: 50%;
 }
 
+.titulo a {
+    text-decoration: none;
+    color: #000;
+}
+
 .texto {
     text-align: justify;
-    font-size:x-large;
+    font-size:x-large;   
 }
 
 footer {
