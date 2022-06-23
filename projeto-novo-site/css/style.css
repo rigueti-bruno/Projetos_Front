@@ -125,4 +125,8 @@ footer {
     .links {
         flex-wrap: wrap;
     }
+
+    .links a {
+        margin: 0 3% 0 3%;
+    }
 }
