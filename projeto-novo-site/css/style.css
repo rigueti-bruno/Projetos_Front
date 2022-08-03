@@ -8,10 +8,12 @@
 
 body {
     background-color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-rows: 0.0005fr auto 0.0005fr;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: stretch;
+    justify-content: stretch;*/
 }
 
 img {
@@ -24,6 +26,8 @@ img {
 header {
     display: flex;
     justify-content: center;
+    justify-self: center;
+    align-self: center;
     padding: 5%;
     background-color: #fff;
  }
