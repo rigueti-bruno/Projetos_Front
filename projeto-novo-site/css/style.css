@@ -8,17 +8,15 @@
 
 body {
     background-color: #fff;
-    display: grid;
-    grid-template-rows: 0.0005fr auto 0.0005fr;
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: stretch;*/
+    justify-content: stretch;
 }
 
 img {
         height: auto;
-        width: 100%;
+        max-width: 100%;
         aspect-ratio:attr(width)/attr(height);
     }
 
