@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Metadata-->
+    <link rel="icon" href="../img/favicon.webp" type="image/webp">
+    <title>The Bruno's Blog - Autor</title>
+    <meta name="keywords" content="perfil, autor, sobre, blog, bruno, rigueti, brandao, bruno-rigueti-brandao" />
+    <meta name="description" content="Página onde falo um pouco sobre mim - o Autor do Site!" />
+    <meta name="author" content="Bruno Rigueti Brandão"/>
+
+    <!--Facebook e LinkedIn-->
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Autor - Bruno Rigueti Brandão" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Página onde falo um pouco sobre mim - o Autor do Site!" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://brunos.blog.br/pages/autor.html" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="../img/perfil.jpg" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
         * {
@@ -32,24 +47,61 @@
         }
 
         #sobre {
-            position: relative;
-            top: 70px;
-            right: 0;
-            left: 0;
-            bottom: 0;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
             height: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            text-align: justify;
             margin: 3%;
             font-size: larger;
         }
 
-        #portfolio {
+        #sobre #text {
             position: relative;
-            top: 70px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            text-align: justify;
+        }
+
+        #sobre div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: 3%;
+        }
+
+        #sobre div p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #sobre div img {
+            max-width: 65%;
+            height: auto;
+            aspect-ratio:attr(width)/attr(height);
+            border: solid;
+            margin: 3%;
+        }
+
+        #portfolio {
+            position: absolute;
+            top: 100%;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -86,8 +138,11 @@
         }
 
         #contatos {
-            position: relative;
-            top: 70px;
+            position: absolute;
+            top: 200%;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -123,20 +178,24 @@
 <body>
     <nav id="menu">
         <h1>Autor</h1>
-            <a class="links" href="#sobre">Sobre</a>
-            <a class="links" href="#portfolio">Portfólio</a>
-            <a class="links" href="#contatos">Contatos</a>
+            <a class="links" target="_self" href="#sobre"><p>Sobre</p></a>
+            <a class="links" target="_self" href="#portfolio"><p>Portfólio</p></a>
+            <a class="links" target="_self" href="#contatos"><p>Contatos</p></a>
     </nav>
     <section id="sobre">
-        <h1>Bem-vindo!</h1>
-            <h3>Eu sou Bruno Rigueti Brandão<br>
-                Sou graduado em Administração de Empresas e possuo MBA em Gestão de Negócios e Gestão Estratégica de Pessoas.
-                Já trabalhei por muitos anos com Gestão Financeira em empresas de diversas áreas.
-                Eu sempre gostei de trabalhar com dados e sempre busquei através deles formas chegar mais rápido a soluções mais precisas.
-                Hoje estou me desenvolvendo para atuar com dados – buscando meios para encontrar soluções com dados e formas para entregar tais soluções da melhor forma.
-                Um dos meus projetos práticos é o Bruno’s Blog!
-            </h3>
+            <div>
+                <img src="../img/perfil.jpg">
+                <p>Bruno Rigueti Brandão - Data Analyst/Developer</p>
+            </div>
+            <h3 id="text">
+                <ul>
+                    <li>Graduado em Administração, com experiência em diversas áreas da Gestão Financeira e especialista em Gestão de Negócios e de Pessoas. </li>
+                    <li>Sempre gostei de trabalhar com dados, tendo sempre eles como base na busca por soluções para minhas atividades. Também sempre me interessei em encontrar as melhores formas para entregar meus resultados. </li>
+                    <li>Hoje estudo para me aperfeiçoar e me tornar efetivamente um Data Analyst e Desenvolvedor para conseguir desenvolver soluções baseadas em dados e entregar seus resultados de forma efetiva.</li>
+                    </ul>                    
+                </h3>
     </section>
+
     <section id="portfolio">
         <h1>Portfólio</h1>
         <div id="cont">

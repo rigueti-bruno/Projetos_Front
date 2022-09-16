@@ -95,6 +95,8 @@ footer {
 .links {
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .button:hover {
