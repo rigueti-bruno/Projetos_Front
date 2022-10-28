@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Shadows+Into+Light&display=swap');
 
 * {
     font-family: 'Crimson Text', serif;
@@ -41,13 +41,13 @@ header img {
 
 header h1 {
     display: none;
+    font-family: 'Shadows Into Light', cursive;
     width: 90%;
     text-align: center;
     font-style: oblique;
     font-weight: 900;
     font-variant: small-caps;
-    text-decoration: none;
-}
+    }
 
 .artigo {
     display: flex;
@@ -114,8 +114,7 @@ footer {
 @media (max-width: 650px) {
     header {
         width: 100%;
-        text-decoration: none;
-    }
+            }
 
     header img {
         display: none;
@@ -123,11 +122,16 @@ footer {
 
     header h1 {
         display: block;
+            }
+
+    header a {
         text-decoration: none;
+        color: black;
     }
 
     main {
         margin: 0 5%;
+        box-shadow: none;
     }
 
     .titulo {
